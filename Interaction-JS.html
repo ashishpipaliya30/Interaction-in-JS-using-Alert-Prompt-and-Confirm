@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction in Javascript using Alert, Prompt and Confirm</title>
+</head>
+
+<body>
+    <h1>Interaction in Javascript using Alert, Prompt and Confirm</h1>
+
+    <script>
+        // Alert in in-broeser Javascript - Does not return anything
+        let a = alert("This is a message");
+        console.log(a);
+
+        // Prompt in Js
+        let name1 = prompt("What is your name", "Guest");
+        console.log(name1);
+
+        // Confirm in Js
+        let deletePost = confirm("Do you really want to delete this  post?");
+
+        if (deletePost) {
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else {
+            // Code to cancel deletion of the post
+            console.log("Your post has not deleted");
+        }
+        console.log(deletePost);
+
+        // Challenge 
+        let name = prompt("What is your Age");
+        if (name>18) {
+            // Code to delete the post
+            console.log("You are allowed inside the club");
+        }
+        else {
+            // Code to cancel deletion of the post
+            console.log("You are not allowed inside the club");
+        }
+
+    </script>
+</body>
+
+</html>
